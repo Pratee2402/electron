@@ -67,7 +67,9 @@ class App extends Component {
       );
 
       this.setState({ userDetails: filteredUser });
+      this.setState({ filteredData: filteredUser });
     }
+    alert("User deleted successfully!!");
   };
 
   componentDidMount() {
@@ -87,7 +89,7 @@ class App extends Component {
           />
           &nbsp;
           <button type="submit" className="Btn" onClick={this.handleSubmit}>
-            {" "}
+            
             Submit
           </button>
           &nbsp;
